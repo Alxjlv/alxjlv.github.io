@@ -8,8 +8,13 @@
         </a>
       </h1>
     </div>
+    <span class="text-small text-gray mr-2">Progress:</span>
+    <span class="Progress d-inline-flex" style="width:180px">
+  <span class="bg-purple" style="width: 50%;"></span>
+</span>
     <div class="text-gray mb-2 ws-normal">{{ repository.description }}</div>
   </div>
+
   <div class="d-flex f6">
     {% if repository.language %}
         <span class="repo-language-color ml-0 mr-1" style="background-color:{{ site.data.colors[repository.language]["color"] }}"></span>
