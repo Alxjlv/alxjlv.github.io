@@ -50,5 +50,20 @@
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+
   </div>
 {% endif %}
+<h2 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">Quick Links</h2>
+<div class="f4 mb-6">
+  <div class="{{ metadata_styles }}">
+    <a href="/cv" {% if site.style == 'dark' %}class="text-white"{% endif %}>My Resume</a>
+  </div>
+</div>
+{% comment %} 
+Nice layout for linkedin link:
+<div class="d-flex flex-items-centre mb-3 ">      
+  <svg height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" class="octicon octicon-mark-github mr-2">
+    <path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" fill="#959da5"></path>
+  </svg>
+  <a href="https://www.linkedin.com/in/alxjlv" class="tooltipped tooltipped-se text-white" aria-label="LinkedIn: alxjlv">Alex Verkerk</a>      
+</div> {% endcomment %}
